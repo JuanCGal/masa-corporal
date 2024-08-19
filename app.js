@@ -27,7 +27,7 @@ function calcularImc() {
     } else if(imc >= 30) {
         asignarTextoElemento('h2', `Estás obeso, tu IMC es ${imcDosDecimales}`);
     } else {
-        asignarTextoElemento('h2', `Estás tan bien como Sofy, tu IMC es ${imcDosDecimales}`);
+        asignarTextoElemento('h2', `Estás genial, tu IMC es ${imcDosDecimales}`);
     }
 
     return;
