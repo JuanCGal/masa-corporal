@@ -19,7 +19,7 @@ function calcularImc() {
     imc = peso / (estatura * estatura);
     // console.log(imc);
     imcDosDecimales = imc.toFixed(2);
-
+    
     if (imc >= 25 && imc < 30) {
         asignarTextoElemento('h2', `Tienes sobrepeso, tu IMC es ${imcDosDecimales}`);
     } else if (imc < 18.5) {
@@ -31,6 +31,15 @@ function calcularImc() {
     }
 
     return;
+}
+
+function letrero(){
+    letreroImagen.style.display = "block";
+}
+
+function lanzaDosFunciones(){
+    letrero();
+    calcularImc();
 }
 
 // function limpiarCaja() {
@@ -58,6 +67,7 @@ function reiniciarJuego() {
     document.querySelector('#reiniciar').setAttribute('disabled','true');
     
 }
+
 calcularImc();
 condicionesIniciales();
 

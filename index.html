@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="es-co">
 
 <head>
     <meta charset="UTF-8">
@@ -13,33 +13,46 @@
 </head>
 
 <body>
+    <div class="principal">
+        <header>
+            <h1></h1>
+        </header>
 
-    <div class="container">
-        <div class="container__contenido">
-            <div class="container__informaciones">
-                <div class="container__texto">
-                    <h1></h1>
-                    <h2></h2>
-                    <p id="parrrafo_peso" class="texto__parrafo"></p>
+        <main>
+            <div class="container">
+                <div class="container__contenido">
+                    <div class="container__informaciones">
+                        <div class="container__texto">
+                            <p id="parrrafo_peso" class="texto__parrafo"></p>
+                        </div>
+                        <input type="number" id="peso" min="1" max="10" class="container__input">
+                        <p id="parrafo_estatura" class="texto__parrafo"></p>
+                        <p id="parrafo_estatura" class="texto__parrafo"></p>
+                        <input type="number" id="estatura" min="1" max="10" class="container__input input__estatura" placeholder="Ejemplo: 1.68">
+                        <div class="chute container__botones">
+                            <button id="botonImc" onclick="lanzaDosFunciones();" class="container__boton">Conoce tu IMC</button>
+                            <!-- <button onclick="reiniciarJuego();" class="container__boton" id="reiniciar" disabled>Nuevo juego</button> -->
+                            <!-- <button onclick="factorial();" class="container__boton">Halla el factorial</button> -->
+                            <!-- <button onclick="dolarAPesos();" class="container__boton">Convierte a pesos</button> -->
+                            <!-- <button onclick="areaRectangulo();" class="container__boton">Halla el área</button> -->
+                            <!-- <button onclick="areaCirculo();" class="container__boton">Halla el área</button> -->
+                            <!-- <button onclick="tablaMultiplcar();" class="container__boton">Tabla</button> -->
+                        </div>
+                    </div>
+                    <!-- <img src="./img/ia.png" alt="Una persona mirando a la izquierda" class="container__imagen-persona" /> -->
                 </div>
-                <input type="number" id="peso" min="1" max="10" class="container__input">
-                <p id="parrafo_estatura" class="texto__parrafo"></p>
-                <p id="parrafo_estatura" class="texto__parrafo"></p>
-                <input type="number" id="estatura" min="1" max="10" class="container__input">
-                <div class="chute container__botones">
-                    <button onclick="calcularImc();" class="container__boton">Conoce tu IMC</button>
-                    <!-- <button onclick="reiniciarJuego();" class="container__boton" id="reiniciar" disabled>Nuevo juego</button> -->
-                    <!-- <button onclick="factorial();" class="container__boton">Halla el factorial</button> -->
-                    <!-- <button onclick="dolarAPesos();" class="container__boton">Convierte a pesos</button> -->
-                    <!-- <button onclick="areaRectangulo();" class="container__boton">Halla el área</button> -->
-                    <!-- <button onclick="areaCirculo();" class="container__boton">Halla el área</button> -->
-                    <!-- <button onclick="tablaMultiplcar();" class="container__boton">Tabla</button> -->
-                </div>
+                <div class="letrero">
+                    <h2 class="letrero__texto"></h2>
+                    <img id="letreroImagen" src="./img/letrero.webp" alt="">
+                </div>    
             </div>
-            <!-- <img src="./img/ia.png" alt="Una persona mirando a la izquierda" class="container__imagen-persona" /> -->
-        </div>
-    </div>
-
+        </main>
+        <footer>
+            <p>
+                Creado por Juan C. Galvis - Agosto 2024
+            </p>
+        </footer>
+    </div>    
 
 
     <script src="app.js"></script>
