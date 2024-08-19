@@ -235,15 +235,17 @@ footer{
 @media(max-width: 375px){
     header{
         margin-bottom: 0;
+        padding: 0.5rem 0 0 0;
     }
 
     h1{
-       font-size: 3rem; 
+       font-size: 2.5rem;
+       padding-bottom: 0; 
     }
 
     .container{
         flex-direction: column;
-        justify-content: center;
+        /* justify-content: center; */
         padding: 0.5rem;
     }
 
@@ -260,6 +262,10 @@ footer{
         margin-bottom: 0;
         font-size: 1.5rem;
         padding-left: 0.5rem ;
+    }
+
+    .texto__parrafo{
+        font-size: 1.5rem;
     }
 
     footer{
